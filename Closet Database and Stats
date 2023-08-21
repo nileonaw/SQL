@@ -1,0 +1,25 @@
+- Create a closet database with clothing items
+
+CREATE TABLE lulu (id INTEGER PRIMARY KEY, name TEXT, color INTEGER, size REAL, price INTEGER);
+INSERT INTO lulu VALUES (1, "All Powered Up Bra", "Black", "S", 88);
+INSERT INTO lulu VALUES (2, "Speed Up HR Shorts", "Sunset Glow", "4", 44);
+INSERT INTO lulu VALUES (3, "Tank And Short Romper", "Black", "4", 128);
+INSERT INTO lulu VALUES (4, "Court Rival HR Skirt", "Black", "4", 88);
+INSERT INTO lulu VALUES (5, "Terry French Shrug", "Black", "0", 78);
+INSERT INTO lulu VALUES (6, "Dance Studio Pants", "True Navy", "4", 99);
+INSERT INTO lulu VALUES (7, "Full Zip Scuba Hoodie", "Grey", "4", 99);
+INSERT INTO lulu VALUES (8, "Oversized Full Zip Scuba Hoodie", "Blush Pink", "XS/S", 110);
+INSERT INTO lulu VALUES (9, "Define Cropped Full Zip Tank Top", "Black", "2", 78);
+INSERT INTO lulu VALUES (10, "Cropped Define Mesh Jacket", "Grey", "4", 138);
+INSERT INTO lulu VALUES (11, "Half Zip Scuba Hoodie", "Dark Lavender", "4", 99);
+INSERT INTO lulu VALUES (13, "Feel Bliss Shoes", "Light", "6", 139);
+INSERT INTO lulu VALUES (14, "Socks", "White", "S", 30);
+Insert into lulu VALUES (15, "Hat", "White", "S", 40);
+
+--display the database ordered by price
+SELECT * FROM lulu ORDER BY price asc;
+or
+SELECT * FROM lulu ORDER BY price desc;
+
+--what is the average price of items?
+SELECT AVG(price) "avg item price" FROM lulu
